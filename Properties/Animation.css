@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@keyframes example{
+    0%{
+        background-color: aquamarine;
+        top: 0px;
+        left: 0px;
+    }
+
+    25%{
+        background-color: dimgray;
+        top: 0px;
+        left: 200px;
+    }
+
+    50%{
+        background-color: dodgerblue;
+        top: 200px;
+        left: 200px;
+    }
+
+    75%{
+        background-color: darkturquoise;
+        top: 200px;
+        left: 0px;
+    }
+
+    100%{
+        background-color: aquamarine;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.div{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+.div:hover{
+    transform: rotateZ(270deg);
+    transition: 2s;
+}
